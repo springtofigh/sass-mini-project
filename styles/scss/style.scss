@@ -1,0 +1,242 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+    @include overal;
+}
+
+body {
+    background-color: $bgColor;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 3rem;
+    background-color: $primaryColor;
+
+    h1 {
+        @include textStyle(1.3rem , bold , $secondaryColor)
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+
+
+        span {
+            display: inline-block;
+            width: 20px;
+            height: 3px;
+            border-radius: 4px;
+            background-color: $secondaryColor;
+            margin: 2px;
+        }
+    }
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    nav {
+        margin-right: 30px;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    a{
+        padding: 8px;
+        text-decoration: none;
+        transition: all .15s ease-in;
+        @include textStyle(1rem , bold , $secondaryColor);
+
+        &:hover {
+            color: $textColor;
+        }
+    }
+}
+
+.main {
+    display: flex;
+    margin: 2rem 3rem;
+
+    main {
+        @include bodyStyle;
+        width: 75%;
+        @include boxStyle;
+        flex-direction: column;
+
+        img {
+            @include boxStyle;
+            width: 300px;
+        }
+
+        h2 {
+            @include textStyle(2.5rem,bold,$primaryColor);
+            margin: 2rem 0 3rem;
+        }
+
+        p {
+            @include textStyle(2rem,bold,$textColor);
+        }
+    }
+
+    aside {
+        @include bodyStyle;
+        flex-direction: column;
+        width: 25%;
+        margin-left: 25px;
+        @include boxStyle;
+
+        div {
+            background-color: $primaryColor;
+            width: 100%;
+            height: 110px;
+            margin: 20px 10px;
+            line-height: 110px;
+            text-align: center;
+            @include boxStyle;
+            @include textStyle(1rem , bold , $secondaryColor)
+        }
+    }
+}
+
+.cards {
+    width: calc(100% - 6rem);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.card {
+    @include boxStyle;
+    background-color: $secondaryColor;
+
+    img {
+        width: 100%;
+    }
+
+    .card-content {
+        line-height: 1.5rem;
+        padding: 15px;
+
+        p {
+            margin: 10px 0;
+            @include textStyle(1.2rem , 100 , $textColor);
+            text-align: justify;
+        }
+
+        span {
+            display: inline-block;
+            margin: 10px 0;
+            @include textStyle(.9rem , bold , $primaryColor);
+        }
+    }
+}
+
+footer {
+    display: flex;
+    padding: 2rem 3rem;
+    margin-top: 30px;
+    background-color: $primaryColor;
+
+    .summary {
+        width: 50%;
+
+        p {
+            @include textStyle(1.2rem , 100 , $secondaryColor);
+            text-align: justify;
+        }
+    }
+}
+
+.links {
+    width: 50%;
+    padding: 0 2rem;
+
+    ul {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration:none;
+        @include textStyle(1.2rem , bold , $secondaryColor);
+        display: inline-block;
+        margin-bottom: 10px;
+        transition: all .15s ease-in;
+
+        &:hover{
+            color: $textColor;
+        }
+    }
+}
+
+
+@include media(M) {
+    .header{
+            .menu {
+            display: flex;
+        }
+    }
+    
+    .navbar {
+        display: none;
+    }
+
+    .main {
+        flex-direction: column;
+        margin: 1rem;
+
+        main {
+            width:calc(100% - 2rem) ;
+            height: 500px;
+            margin-bottom: 20px;
+        }
+
+        aside {
+            width:calc(100% - 2rem) ;
+            height: 600px;
+            margin-left: 0;
+        }
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    footer {
+        flex-direction: column;
+
+
+        .summary {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .links {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+@include media(L) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
