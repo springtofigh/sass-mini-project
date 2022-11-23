@@ -14,18 +14,15 @@ body {
   padding: 0.8rem 3rem;
   background-color: #654fef;
 }
-
 .header h1 {
   font-size: 1.3rem;
   font-weight: bold;
   color: #fff;
 }
-
 .header .menu {
   display: none;
   flex-direction: column;
 }
-
 .header .menu span {
   display: inline-block;
   width: 20px;
@@ -39,21 +36,17 @@ body {
   display: flex;
   align-items: center;
 }
-
 .navbar img {
   width: 50px;
   border-radius: 50%;
 }
-
 .navbar nav {
   margin-right: 30px;
 }
-
 .navbar ul {
   display: flex;
   list-style-type: none;
 }
-
 .navbar a {
   padding: 8px;
   text-decoration: none;
@@ -62,7 +55,6 @@ body {
   font-weight: bold;
   color: #fff;
 }
-
 .navbar a:hover {
   color: rgb(27, 27, 27);
 }
@@ -71,7 +63,6 @@ body {
   display: flex;
   margin: 2rem 3rem;
 }
-
 .main main {
   background-color: #fff;
   height: 600px;
@@ -85,27 +76,23 @@ body {
   overflow: hidden;
   flex-direction: column;
 }
-
 .main main img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   width: 300px;
 }
-
 .main main h2 {
   font-size: 2.5rem;
   font-weight: bold;
   color: #654fef;
   margin: 2rem 0 3rem;
 }
-
 .main main p {
   font-size: 2rem;
   font-weight: bold;
   color: rgb(27, 27, 27);
 }
-
 .main aside {
   background-color: #fff;
   height: 600px;
@@ -120,7 +107,6 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
-
 .main aside div {
   background-color: #654fef;
   width: 100%;
@@ -152,16 +138,13 @@ body {
   overflow: hidden;
   background-color: #fff;
 }
-
 .card img {
   width: 100%;
 }
-
 .card .card-content {
   line-height: 1.5rem;
   padding: 15px;
 }
-
 .card .card-content p {
   margin: 10px 0;
   font-size: 1.2rem;
@@ -169,7 +152,6 @@ body {
   color: rgb(27, 27, 27);
   text-align: justify;
 }
-
 .card .card-content span {
   display: inline-block;
   margin: 10px 0;
@@ -184,11 +166,9 @@ footer {
   margin-top: 30px;
   background-color: #654fef;
 }
-
 footer .summary {
   width: 50%;
 }
-
 footer .summary p {
   font-size: 1.2rem;
   font-weight: 100;
@@ -200,11 +180,9 @@ footer .summary p {
   width: 50%;
   padding: 0 2rem;
 }
-
 .links ul {
   list-style-type: none;
 }
-
 .links a {
   text-decoration: none;
   font-size: 1.2rem;
@@ -214,7 +192,6 @@ footer .summary p {
   margin-bottom: 10px;
   transition: all 0.15s ease-in;
 }
-
 .links a:hover {
   color: rgb(27, 27, 27);
 }
@@ -261,6 +238,6 @@ footer .summary p {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
   }
-} /*# sourceMappingURL=style.css.map */
+}
 
 /*# sourceMappingURL=style.css.map */
