@@ -3,16 +3,6 @@
     margin: 0;
 }
 
-@font-face {
-    font-family: Shabnam;
-    src: url('../../assets/font/shabnam/Shabnam.eot');
-    src: url('../../assets/font/shabnam/Shabnam.eot?#iefix') format('embedded-opentype'),
-       url('../../assets/font/shabnam/Shabnam.woff2') format('woff2'),
-       url('../../assets/font/shabnam/Shabnam.woff') format('woff'),
-       url('../../assets/font/shabnam/Shabnam.ttf') format('truetype');
-font-weight: normal;
-}
-
 @mixin  textStyle($size , $weight , $color) {
     font-size:$size;
     font-weight: $weight;
