@@ -222,7 +222,7 @@ footer .summary p {
   .main aside {
     width: calc(100% - 2rem);
     height: 600px;
-    margin-left: 0;
+    margin-right: 0;
   }
   .cards {
     grid-template-columns: 1fr;
