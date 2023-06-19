@@ -13,5 +13,3 @@ A mini practice project in Sass that is done at the end of the course and is ful
 ✴ HTML
 
 ✴ SASS
-
-✴ Javascript
